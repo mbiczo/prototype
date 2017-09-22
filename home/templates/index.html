@@ -1,0 +1,9 @@
+{% include 'include/header.html' %}
+
+<ul>
+	{% for data in test_data %}
+		<li><a href="/home/details/{{data.id}}">{{data.title}}</a>: {{data.text}}</li>
+	{% endfor %}
+</ul>
+
+{% include 'include/footer.html' %}
